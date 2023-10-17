@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f0f;
+            color; #fff
+        }
+        
+        h1 {
+          color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .section {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Larangan Seks</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Larangan Seks</h1>
+        
+        <div id="section1" class="section">
+            <h2>Bagian 1: Pengantar</h2>
+            <p>Selamat datang di halaman tentang larangan seks. Mari kita mulai dengan pengantar singkat.</p>
+        </div>
+
+        <div id="section2" class="section">
+            <h2>Bagian 2: Dampak Negatif</h2>
+            <p>Larangan seks memiliki dampak negatif terhadap individu dan masyarakat. Hal ini dapat menyebabkan perilaku, seks bebas bisa meningkatkan risiko terkena penyakit menular seksual, seperti HIV, herpes simpleks, kutil kelamin, gonore, dan hepatitis B. Penyakit-penyakit tersebut mudah menular lewat aktivitas seksual, baik seks oral atau seks anal.</p>
+        </div>
+
+        <div id="section3" class="section">
+            <h2>Bagian 3: Pentingnya Edukasi</h2>
+            <p>Edukasi menjadi kunci untuk memahami larangan seks dan mendorong perilaku yang sehat dan etis.</p>
+        </div>
+
+        <div id="section4" class="section">
+            <h2>Bagian 4: Tanggung Jawab Sosial</h2>
+            <p>Semua anggota masyarakat memiliki tanggung jawab untuk menciptakan lingkungan yang bebas dari perilaku seksual yang merugikan.</p>
+        </div>
+
+        <div id="section5" class="section">
+            <h2>Bagian 5: Peningkatan Kesehatan Mental</h2>
+            <p>Larangan seks dapat berkontribusi pada peningkatan kesehatan mental dengan menciptakan hubungan yang lebih bermakna dan sehat.</p>
+        </div>
+
+        <div id="section6" class="section">
+            <h2>Bagian 6: Peran Pendidikan</h2>
+            <p>Pendidikan seks yang tepat adalah kunci untuk memberikan informasi yang benar dan memberdayakan individu untuk membuat keputusan yang baik.</p>
+        </div>
+
+        <div id="section7" class="section">
+            <h2>Bagian 7: Perlunya Dukungan</h2>
+            <p>Memberikan dukungan kepada individu yang mematuhi larangan seks adalah langkah penting dalam menciptakan lingkungan positif.</p>
+        </div>
+
+        <div id="section8" class="section">
+            <h2>Bagian 8: Kesimpulan</h2>
+            <p>Terima kasih telah mengikuti presentasi ini. Larangan seks memainkan peran penting dalam menciptakan masyarakat yang sehat dan etis.</p>
+        </div>
+
+        <button onclick="nextSection()">Selanjutnya</button>
+    </div>
+
+    <script>
+        var currentSection = 1;
+        var totalSections = 8;
+
+        function nextSection() {
+            if (currentSection < totalSections) {
+                document.getElementById('section' + currentSection).style.display = 'none';
+                currentSection++;
+                document.getElementById('section' + currentSection).style.display = 'block';
+            } else {
+                alert('Anda telah mencapai akhir presentasi.');
+            }
+        }
+    </script>
+</body>
+</html>
